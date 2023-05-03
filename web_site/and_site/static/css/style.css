@@ -1,0 +1,72 @@
+:root {
+    --background-color: #bec5e2;
+    --accent-color: orange;
+    --icon-color: rgb(6, 6, 6);
+
+    /* color */
+    --color-black: #2E2E2E;
+    --color-lightgray: #c8c8c8;
+    --color-white: #FFFFFF;
+    --color-blue: ##0101DF;
+    --color-red: #FF0000;
+
+    /* size */
+}
+
+.hidden {
+    display: none;
+}
+
+/* Nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color);
+    height: 100px;
+    padding: 10px 20px;
+}
+
+/* Nav Logo */
+.navbar_logo {
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+/* Nav Menu */
+.navbar_menu {
+    float: center;
+    list-style: none;
+    display: flex;
+}
+
+.navbar_menu li {
+    padding: 10px;
+}
+
+.navbar_menu .navbar_menu_menu:hover {
+    color: var(--color-blue);
+}
+
+.navbar_menu .navbar_menu_submenu {
+    background-color: var(--color-white);
+    border: 1rem solid;
+    color: var(--color-black);
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    z-index: 200
+}
+
+.navbar_menu li:hover .navbar_menu_submenu {
+    display: block;
+}
+
+.navbar_menu .navbar_menu_submenu li:hover {
+    background-color: var(--color-lightgray);
+    transition: ease-in;
+}
