@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>text | organization</title>
+</head>
+<body>
+    <!-- Nav -->
+    <nav class="navbar">
+
+        <div class="navbar_logo">
+            <h1 class="hidden">로고</h1>
+            <a href="#"><img src="/static/img/logo.png" alt="Logo"></a>
+        </div>
+
+        <ul class="navbar_menu">
+            <h1 class="hidden">카테고리</h1>
+            <li>
+                <a class="navbar_menu_menu" href="#">Menu01</a>
+            </li>
+            <li>
+                <a class="navbar_menu_menu" href="#">Menu02</a>
+                <ul class="navbar_menu_submenu">
+                    <li><a href="#">SebMenu201</a></li>
+                    <li><a href="#">SebMenu202</a></li>
+                    <li><a href="#">SebMenu203</a></li>
+                    <li><a href="#">SebMenu204</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar_menu_menu" href="#">Menu03</a>
+                <ul class="navbar_menu_submenu">
+                    <li><a href="#">SebMenu301</a></li>
+                    <li><a href="#">SebMenu302</a></li>
+                    <li><a href="#">SebMenu303</a></li>
+                    <li><a href="#">SebMenu304</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar_menu_menu" href="#">Menu04</a>
+                <ul class="navbar_menu_submenu">
+                    <li><a href="#">SebMenu401</a></li>
+                    <li><a href="#">SebMenu402</a></li>
+                    <li><a href="#">SebMenu403</a></li>
+                    <li><a href="#">SebMenu404</a></li>
+                </ul>
+            </li>
+            <li>
+                <a class="navbar_menu_menu" href="#">Menu05</a>
+                <ul class="navbar_menu_submenu">
+                    <li><a href="#">SebMenu501</a></li>
+                    <li><a href="#">SebMenu502</a></li>
+                    <li><a href="#">SebMenu503</a></li>
+                    <li><a href="#">SebMenu504</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Footer -->
+</body>
+</html>
